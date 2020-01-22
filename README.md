@@ -9,6 +9,15 @@ Probably works on other Sunmi devices equipped with SEIKO thermal printer.
 
 ## Getting Started
 
+Add this plugin under `dependencies` to pubspec.yaml:
+```` yaml
+dependencies:
+  sunmi_thermal_printer:
+    git:
+      url: git://github.com/brian-quah/sunmi_thermal_printer.git
+      ref: master
+````
+
 Required permissions in AndroidManifest.xml:
 ``` xml
 <uses-permission android:name="android.permission.BLUETOOTH" />
@@ -33,4 +42,4 @@ var printer = SunmiThermalPrinter()
 printer.exec();
 ```
 
-See example app for a a detailed receipt example.
+See example app for a detailed receipt example.
